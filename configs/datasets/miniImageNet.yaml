@@ -1,0 +1,6 @@
+DATASET:
+  NAME: "miniImageNet"
+  NUM_CLASSES: 100
+  NUM_CLASSES_BASE: 60
+  CLASS_PER_TASK: 5
+  GD_PATH: "pre_calculate_GD/miniImageNet.pkl"

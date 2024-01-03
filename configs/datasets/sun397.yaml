@@ -1,0 +1,6 @@
+DATASET:
+  NAME: "SUN397"
+  NUM_CLASSES: 397
+  NUM_CLASSES_BASE: 197
+  CLASS_PER_TASK: 10
+  GD_PATH: "pre_calculate_GD/sun397.pkl"

@@ -1,0 +1,7 @@
+DATASET:
+  NAME: "CUB200_wo_Base"
+  NUM_CLASSES: 200
+  NUM_CLASSES_BASE: 0
+  CLASS_PER_TASK: 10
+  GD_PATH: "pre_calculate_GD/cub200_wo_base.pkl"
+  
