@@ -1,5 +1,7 @@
 # LP-DiF
 Official implementation of the paper "Learning Prompt with Distribution-Based Feature Replay for Few-Shot Class-Incremental Learning"
+![Alt text](resources/pipeline.png)
+
 
 ## Overall
 Our code is mainly based on [CoOp](https://github.com/KaiyangZhou/CoOp) and [SHIP](https://github.com/mrflogs/SHIP). Sincerely thanks for their contribution. 
@@ -67,7 +69,7 @@ Move or link those unzip datasets folder into this ```./data```, and make folder
 Note that the CIFAR100 dataset is automatically downloaded by the torchvision's code, so there is no need to manually configure it.
 
 ### Pre-compute Gaussian Distribution of Old Classes
-The Gaussian Distribution of Old Classes of each dataset are release in [https://drive.google.com/drive/folders/1w5tIVP0gKnOFBcHa-24HlJDBRtvTfZxD?usp=sharing](https://drive.google.com/drive/folders/1w5tIVP0gKnOFBcHa-24HlJDBRtvTfZxD?usp=sharing).
+The Gaussian Distribution of Old Classes of each dataset are release in [google drive](https://drive.google.com/drive/folders/1w5tIVP0gKnOFBcHa-24HlJDBRtvTfZxD?usp=sharing).
 
 Download these .pkl files in ```./pre_calculate_GD/``` in the root of this project:
 
@@ -112,3 +114,7 @@ For training LP_DiF on CUB-200* (CUB-200 w/o base session) dataset, execute:
 ```shell
 bash scripts/script_cub200_wo_base.sh
 ```
+
+## Pretrained Model
+The fine-tuned prompt parameters on the last session of each dataset can be downloaded from this link: [google drive](https://drive.google.com/drive/folders/1Rh5ZJDx0F70t8hisg11_n6Zn4qoPRa0R?usp=sharing).
+You can download them and mv them into a created folder ```output```. Then you can launch the evalution by run the train.py with args ```--eval-only```.
